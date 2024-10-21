@@ -1,12 +1,12 @@
 {
   "name": "@aneuhold/be-ts-db-lib",
-  "version": "1.0.115",
+  "version": "1.0.116",
   "description": "A backend database library meant to actually interact with various databases in personal projects",
   "author": "Anton G Neuhold Jr <agneuhold@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.5.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aneuhold/be-ts-db-lib.git"
