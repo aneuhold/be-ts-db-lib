@@ -1,6 +1,7 @@
 import { BaseDocument } from '@aneuhold/core-ts-db-lib';
 import crypto from 'crypto';
-import BaseRepository from '../repositories/BaseRepository';
+import { expect } from 'vitest';
+import BaseRepository from '../repositories/BaseRepository.js';
 
 /**
  * A random series of characters for tests to help identify test users.

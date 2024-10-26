@@ -1,9 +1,9 @@
 import { User, validateUser } from '@aneuhold/core-ts-db-lib';
 import { ErrorUtils, Logger } from '@aneuhold/core-ts-lib';
 import { ObjectId } from 'bson';
-import IValidator from '../BaseValidator';
-import UserRepository from '../../repositories/common/UserRepository';
-import { TEST_USER_NAME_PREFIX } from '../../tests/testsUtil';
+import UserRepository from '../../repositories/common/UserRepository.js';
+import { TEST_USER_NAME_PREFIX } from '../../tests/testsUtil.js';
+import IValidator from '../BaseValidator.js';
 
 export default class UserValidator extends IValidator<User> {
   async validateNewObject(newUser: User): Promise<void> {

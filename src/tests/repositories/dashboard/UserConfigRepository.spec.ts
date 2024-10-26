@@ -1,9 +1,10 @@
-import crypto from 'crypto';
 import { User } from '@aneuhold/core-ts-db-lib';
-import UserRepository from '../../../repositories/common/UserRepository';
-import { cleanupDoc, getTestUserName } from '../../testsUtil';
-import DocumentDb from '../../../util/DocumentDb';
-import DashboardUserConfigRepository from '../../../repositories/dashboard/DashboardUserConfigRepository';
+import crypto from 'crypto';
+import { afterAll, describe, expect, it } from 'vitest';
+import UserRepository from '../../../repositories/common/UserRepository.js';
+import DashboardUserConfigRepository from '../../../repositories/dashboard/DashboardUserConfigRepository.js';
+import DocumentDb from '../../../util/DocumentDb.js';
+import { cleanupDoc, getTestUserName } from '../../testsUtil.js';
 
 const userRepo = UserRepository.getRepo();
 const configRepo = DashboardUserConfigRepository.getRepo();

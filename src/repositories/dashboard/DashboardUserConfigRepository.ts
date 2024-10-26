@@ -6,10 +6,10 @@ import {
   UpdateFilter,
   UpdateResult
 } from 'mongodb';
-import DashboardBaseRepository from './DashboardBaseRepository';
-import DashboardUserConfigValidator from '../../validators/dashboard/UserConfigValidator';
-import CleanDocument from '../../util/DocumentCleaner';
-import { RepoListeners } from '../../services/RepoSubscriptionService';
+import { RepoListeners } from '../../services/RepoSubscriptionService.js';
+import CleanDocument from '../../util/DocumentCleaner.js';
+import DashboardUserConfigValidator from '../../validators/dashboard/UserConfigValidator.js';
+import DashboardBaseRepository from './DashboardBaseRepository.js';
 
 /**
  * The repository that contains {@link DashboardUserConfig} documents.

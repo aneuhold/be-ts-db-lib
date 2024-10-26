@@ -1,12 +1,12 @@
 import { User, UserCTO } from '@aneuhold/core-ts-db-lib';
 import { ObjectId } from 'bson';
-import BaseRepository from '../BaseRepository';
-import UserValidator from '../../validators/common/UserValidator';
-import ApiKeyRepository from './ApiKeyRepository';
-import DashboardUserConfigRepository from '../dashboard/DashboardUserConfigRepository';
-import DashboardTaskRepository from '../dashboard/DashboardTaskRepository';
-import DashboardNonogramKatanaItemRepository from '../dashboard/DashboardNonogramKatanaItemRepository';
-import DashboardNonogramKatanaUpgradeRepository from '../dashboard/DashboardNonogramKatanaUpgradeRepository';
+import UserValidator from '../../validators/common/UserValidator.js';
+import BaseRepository from '../BaseRepository.js';
+import DashboardNonogramKatanaItemRepository from '../dashboard/DashboardNonogramKatanaItemRepository.js';
+import DashboardNonogramKatanaUpgradeRepository from '../dashboard/DashboardNonogramKatanaUpgradeRepository.js';
+import DashboardTaskRepository from '../dashboard/DashboardTaskRepository.js';
+import DashboardUserConfigRepository from '../dashboard/DashboardUserConfigRepository.js';
+import ApiKeyRepository from './ApiKeyRepository.js';
 
 /**
  * The repository that contains {@link User} documents.

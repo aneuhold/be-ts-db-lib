@@ -1,7 +1,7 @@
 import { ApiKey, User } from '@aneuhold/core-ts-db-lib';
-import BaseRepository from '../BaseRepository';
-import ApiKeyValidator from '../../validators/common/ApiKeyValidator';
-import { RepoListeners } from '../../services/RepoSubscriptionService';
+import { RepoListeners } from '../../services/RepoSubscriptionService.js';
+import ApiKeyValidator from '../../validators/common/ApiKeyValidator.js';
+import BaseRepository from '../BaseRepository.js';
 
 /**
  * The repository that contains {@link ApiKey} documents.

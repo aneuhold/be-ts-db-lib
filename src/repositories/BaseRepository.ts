@@ -1,4 +1,5 @@
 import { BaseDocument } from '@aneuhold/core-ts-db-lib';
+import { Document, ObjectId } from 'bson';
 import {
   AnyBulkWriteOperation,
   BulkWriteResult,
@@ -8,13 +9,12 @@ import {
   OptionalUnlessRequiredId,
   UpdateResult
 } from 'mongodb';
-import { Document, ObjectId } from 'bson';
-import DocumentDb from '../util/DocumentDb';
-import IValidator from '../validators/BaseValidator';
-import DocumentCleaner from '../util/DocumentCleaner';
 import RepoSubscriptionService, {
   RepoListeners
-} from '../services/RepoSubscriptionService';
+} from '../services/RepoSubscriptionService.js';
+import DocumentCleaner from '../util/DocumentCleaner.js';
+import DocumentDb from '../util/DocumentDb.js';
+import IValidator from '../validators/BaseValidator.js';
 
 /**
  * A base repository that implements a lot of the normal CRUD operations.

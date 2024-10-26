@@ -5,11 +5,11 @@ import {
 } from '@aneuhold/core-ts-db-lib';
 import { ObjectId } from 'bson';
 import { DeleteResult } from 'mongodb';
-import DashboardBaseRepository from './DashboardBaseRepository';
-import CleanDocument from '../../util/DocumentCleaner';
-import { RepoListeners } from '../../services/RepoSubscriptionService';
-import DashboardTaskValidator from '../../validators/dashboard/TaskValidator';
-import DashboardUserConfigRepository from './DashboardUserConfigRepository';
+import { RepoListeners } from '../../services/RepoSubscriptionService.js';
+import CleanDocument from '../../util/DocumentCleaner.js';
+import DashboardTaskValidator from '../../validators/dashboard/TaskValidator.js';
+import DashboardBaseRepository from './DashboardBaseRepository.js';
+import DashboardUserConfigRepository from './DashboardUserConfigRepository.js';
 
 /**
  * The repository that contains {@link DashboardTask} documents.

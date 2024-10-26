@@ -1,8 +1,9 @@
 import { User } from '@aneuhold/core-ts-db-lib';
-import UserRepository from '../../../repositories/common/UserRepository';
-import { cleanupDoc, expectToThrow, getTestUserName } from '../../testsUtil';
-import ApiKeyRepository from '../../../repositories/common/ApiKeyRepository';
-import DocumentDb from '../../../util/DocumentDb';
+import { afterAll, describe, expect, it } from 'vitest';
+import ApiKeyRepository from '../../../repositories/common/ApiKeyRepository.js';
+import UserRepository from '../../../repositories/common/UserRepository.js';
+import DocumentDb from '../../../util/DocumentDb.js';
+import { cleanupDoc, expectToThrow, getTestUserName } from '../../testsUtil.js';
 
 const userRepo = UserRepository.getRepo();
 
