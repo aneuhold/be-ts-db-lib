@@ -44,7 +44,7 @@ describe('Get operations', () => {
 
     const tasks = await taskRepo.getAllForUser(newUser._id);
     expect(tasks.length).toBe(1);
-    expect(tasks[0]._id).toEqual(newTask._id);
+    expect(tasks[0]._id.toString()).toEqual(newTask._id.toString());
 
     await cleanupDoc(userRepo, newUser);
     await cleanupDoc(userRepo, otherUser);
@@ -74,8 +74,8 @@ describe('Get operations', () => {
 
     const tasks = await taskRepo.getAllForUser(newUser._id);
     expect(tasks.length).toBe(2);
-    expect(tasks[0]._id).toEqual(newTask._id);
-    expect(tasks[1]._id).toEqual(otherUserTask._id);
+    expect(tasks[0]._id.toString()).toEqual(newTask._id.toString());
+    expect(tasks[1]._id.toString()).toEqual(otherUserTask._id.toString());
 
     await cleanupDoc(userRepo, newUser);
     await cleanupDoc(userRepo, otherUser);
@@ -86,7 +86,12 @@ afterAll(async () => {
   return DocumentDb.closeDbConnection();
 });
 
-async function createNewTestUser() {
+/**
+ * Create a new test user
+ *
+ * @returns The new user
+ */
+async function createNewTestUser(): Promise<User> {
   const newUser = new User(
     getTestUserName(`${crypto.randomUUID()}dashboardTaskTest`)
   );

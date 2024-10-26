@@ -108,19 +108,6 @@ describe('Update operations', () => {
   });
 });
 
-/**
- * Deletes all users!
- *
- * Make sure that the local DB you are working on doesn't have important
- * state before turning skip off on this one.
- *
- * To just do a cleanup, put `only` after `it`. So `it.only('can delete all users'`
- */
-it.skip('can delete all users', async () => {
-  const result = await userRepo.deleteAll();
-  expect(result.acknowledged).toBeTruthy();
-});
-
 afterAll(async () => {
   await DocumentDb.closeDbConnection();
 });

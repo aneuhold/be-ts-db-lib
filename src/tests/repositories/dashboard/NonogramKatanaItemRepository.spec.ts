@@ -39,6 +39,11 @@ it.skip('can delete all items', async () => {
   expect(result.acknowledged).toBeTruthy();
 });
 
+/**
+ * Create a new test user
+ *
+ * @returns The new user
+ */
 async function createNewTestUser() {
   const newUser = new User(
     getTestUserName(`${crypto.randomUUID()}nonogramKatanaItemTest`)
