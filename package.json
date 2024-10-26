@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rimraf lib && tsc --project tsconfig.build.json && tsx ./scripts/copyTsFiles.ts",
     "lint": "eslint",
-    "test": "vitest run && validate:dry",
+    "test": "vitest run && yarn validate:dry",
     "validate": "tsx ./scripts/validateSchema.ts",
     "validate:dry": "tsx ./scripts/validateSchemaDryRun.ts",
     "jsr:validate": "tb pkg validateJsr",
