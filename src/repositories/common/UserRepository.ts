@@ -37,7 +37,7 @@ export default class UserRepository extends BaseRepository<User> {
   /**
    * Gets the singleton instance of the {@link UserRepository}.
    */
-  static getRepo() {
+  static getRepo(): UserRepository {
     if (!UserRepository.singletonInstance) {
       UserRepository.singletonInstance = new UserRepository();
     }

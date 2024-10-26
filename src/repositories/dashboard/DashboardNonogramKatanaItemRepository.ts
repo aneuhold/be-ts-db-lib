@@ -40,7 +40,7 @@ export default class DashboardNonogramKatanaItemRepository extends DashboardBase
   /**
    * Gets the singleton instance of the {@link DashboardNonogramKatanaItemRepository}.
    */
-  public static getRepo() {
+  public static getRepo(): DashboardNonogramKatanaItemRepository {
     if (!DashboardNonogramKatanaItemRepository.singletonInstance) {
       DashboardNonogramKatanaItemRepository.singletonInstance =
         new DashboardNonogramKatanaItemRepository();

@@ -42,7 +42,7 @@ export default class DashboardNonogramKatanaUpgradeRepository extends DashboardB
   /**
    * Gets the singleton instance of the {@link DashboardNonogramKatanaUpgradeRepository}.
    */
-  public static getRepo() {
+  public static getRepo(): DashboardNonogramKatanaUpgradeRepository {
     if (!DashboardNonogramKatanaUpgradeRepository.singletonInstance) {
       DashboardNonogramKatanaUpgradeRepository.singletonInstance =
         new DashboardNonogramKatanaUpgradeRepository();

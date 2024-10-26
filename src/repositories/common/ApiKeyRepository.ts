@@ -46,7 +46,7 @@ export default class ApiKeyRepository extends BaseRepository<ApiKey> {
   /**
    * Gets the singleton instance of the {@link ApiKeyRepository}.
    */
-  public static getRepo() {
+  public static getRepo(): ApiKeyRepository {
     if (!ApiKeyRepository.singletonInstance) {
       ApiKeyRepository.singletonInstance = new ApiKeyRepository();
     }
