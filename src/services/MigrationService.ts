@@ -49,16 +49,4 @@ export default class MigrationService {
       DR.logger.success('No changes to make.');
     }
   }
-
-  static async migrate(): Promise<void> {
-    DR.logger.info('Starting migration...');
-    // Add migration logic here
-    DR.logger.success('Migration complete.');
-  }
-
-  static async migrateDryRun(): Promise<void> {
-    DR.logger.info('Starting migration dry run...');
-    // Add migration dry run logic here
-    DR.logger.success('Migration dry run complete.');
-  }
 }

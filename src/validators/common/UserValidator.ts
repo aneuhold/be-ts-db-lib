@@ -96,15 +96,4 @@ export default class UserValidator extends IValidator<User> {
       ErrorUtils.throwError('Username already exists', { userName });
     }
   }
-
-  protected async validateInsertUpdate(doc: User): Promise<void> {
-    const existingUser = await UserRepository.getRepo().get({
-      'auth.username': doc.auth.username // Corrected query syntax
-    });
-    if (existingUser && !existingUser._id.equals(doc._id)) {
-      const errorMsg = `Username ${doc.auth.username} already exists.`;
-      DR.logger.error(errorMsg);
-      ErrorUtils.throwError(errorMsg, doc); // Added second argument
-    }
-  }
 }

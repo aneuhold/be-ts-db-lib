@@ -49,32 +49,6 @@ export default class DashboardTaskValidator extends IValidator<DashboardTask> {
     }
   }
 
-  protected async validateInsertUpdate(doc: DashboardTask): Promise<void> {
-    if (doc.parentRecurringTaskInfo) {
-      const parentInfo = doc.parentRecurringTaskInfo; // Cast to ensure type safety
-      if (!parentInfo.parentTaskId) {
-        ErrorUtils.throwError(
-          'parentRecurringTaskInfo.parentTaskId is required if parentRecurringTaskInfo is provided.',
-          doc
-        );
-      }
-      const parentTask = await DashboardTaskRepository.getRepo().get({
-        _id: parentInfo.parentTaskId
-      });
-      if (!parentTask) {
-        const errorMsg = `Parent task with id ${parentInfo.parentTaskId.toHexString()} not found.`;
-        DR.logger.error(errorMsg);
-        ErrorUtils.throwError(errorMsg, doc);
-      }
-      if (parentTask && !parentTask.recurrenceInfo) {
-        // Check parentTask exists before accessing recurrenceInfo
-        const errorMsg = `Parent task with id ${parentInfo.parentTaskId.toHexString()} does not have recurrenceInfo.`;
-        DR.logger.error(errorMsg);
-        ErrorUtils.throwError(errorMsg, doc);
-      }
-    }
-  }
-
   async validateRepositoryInDb(dryRun: boolean): Promise<void> {
     const taskRepo = DashboardTaskRepository.getRepo();
     const allTasks = await taskRepo.getAll();
