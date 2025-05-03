@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@aneuhold/eslint-config": "^1.0.89",
-    "@aneuhold/main-scripts": "^2.0.13",
+    "@aneuhold/main-scripts": "^2.1.0",
     "@types/node": "^22.15.3",
     "@types/node-fetch": "^2.6.12",
     "eslint": "^9.26.0",

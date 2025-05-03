@@ -13,7 +13,7 @@ __metadata:
     "@aneuhold/core-ts-db-lib": "npm:^2.0.66"
     "@aneuhold/core-ts-lib": "npm:^2.1.1"
     "@aneuhold/eslint-config": "npm:^1.0.89"
-    "@aneuhold/main-scripts": "npm:^2.0.13"
+    "@aneuhold/main-scripts": "npm:^2.1.0"
     "@types/node": "npm:^22.15.3"
     "@types/node-fetch": "npm:^2.6.12"
     bson: "npm:^6.2.0"
@@ -63,7 +63,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aneuhold/core-ts-lib@npm:^2.0.10, @aneuhold/core-ts-lib@npm:^2.1.1":
+"@aneuhold/core-ts-lib@npm:^2.1.1":
   version: 2.1.1
   resolution: "@aneuhold/core-ts-lib@npm:2.1.1"
   checksum: 10c0/172fb0582d506e6934aef734aa90db52b1508b070a41890c625000ba5f020710c9721bb0bb6bb10a2b9249137decd038bd9d18b385fa95d26e7d1237026ea61e
@@ -95,18 +95,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aneuhold/main-scripts@npm:^2.0.13":
-  version: 2.0.13
-  resolution: "@aneuhold/main-scripts@npm:2.0.13"
+"@aneuhold/main-scripts@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@aneuhold/main-scripts@npm:2.1.0"
   dependencies:
-    "@aneuhold/core-ts-lib": "npm:^2.0.10"
+    "@aneuhold/core-ts-lib": "npm:^2.1.1"
     "@inquirer/prompts": "npm:^7.3.2"
     commander: "npm:^12.1.0"
     fluent-ffmpeg: "npm:^2.1.3"
     node-fetch: "npm:^2.7.0"
   bin:
     tb: lib/index.js
-  checksum: 10c0/66128441fdfbb44ed5a72c3beb048c97408c15e8004f7ff2954b9cf167277ee11bdeebc3c6b6be8ad1fcf1fde7359199a12da506bb7be0cfca734c7a1b4a3648
+  checksum: 10c0/e1249fc5705d1cb6c7b7a194fcd4c765f0e448175fff65d40180f12ce2be45c706b5514befa5f0e4e7c746f59bd0590b98c7822dd455e37f8104b840fe633e0d
   languageName: node
   linkType: hard
 
