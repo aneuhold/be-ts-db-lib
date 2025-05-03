@@ -16,17 +16,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aneuhold/be-ts-db-lib@workspace:."
   dependencies:
-    "@aneuhold/be-ts-lib": "npm:^2.0.24"
-    "@aneuhold/core-ts-db-lib": "npm:^2.0.26"
-    "@aneuhold/core-ts-lib": "npm:^2.0.10"
-    "@aneuhold/eslint-config": "npm:^1.0.88"
+    "@aneuhold/be-ts-lib": "npm:^2.0.64"
+    "@aneuhold/core-ts-db-lib": "npm:^2.0.66"
+    "@aneuhold/core-ts-lib": "npm:^2.1.1"
+    "@aneuhold/eslint-config": "npm:^1.0.89"
     "@aneuhold/main-scripts": "npm:^2.0.13"
     "@types/node": "npm:^22.15.2"
     "@types/node-fetch": "npm:^2.6.12"
     bson: "npm:^6.2.0"
     eslint: "npm:^9.25.1"
     jsr: "npm:^0.13.4"
-    mongodb: "npm:^6.3.0"
+    mongodb: "npm:^6.8.0"
     prettier: "npm:^3.5.3"
     rimraf: "npm:^6.0.1"
     tsx: "npm:^4.19.3"
@@ -35,48 +35,38 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@aneuhold/be-ts-lib@npm:^2.0.24":
-  version: 2.0.24
-  resolution: "@aneuhold/be-ts-lib@npm:2.0.24"
+"@aneuhold/be-ts-lib@npm:^2.0.64":
+  version: 2.0.64
+  resolution: "@aneuhold/be-ts-lib@npm:2.0.64"
   dependencies:
-    "@aneuhold/core-ts-api-lib": "npm:^2.0.9"
-    "@aneuhold/core-ts-lib": "npm:^2.0.6"
+    "@aneuhold/core-ts-api-lib": "npm:^2.1.5"
+    "@aneuhold/core-ts-lib": "npm:^2.1.1"
     dotenv: "npm:^16.4.7"
     jsonc-parser: "npm:^3.3.1"
     node-fetch: "npm:^2"
     octokit: "npm:^3.1.2"
-  checksum: 10c0/488db73693db224a985e45feb1888264bfa70913a7faccdbeb3a21f7047b184f771462de3403d731dc5da70bcd4376efb85b37326bcab8426febabc9d0a23d45
+  checksum: 10c0/dce6d376d78d81d35ca14a57426cada6fc8f4f200746c6a6cf9f6ba6c27d353eeff782b370261b856efdb44de3a06659fa0ff3916b867dbb1961880583826dce
   languageName: node
   linkType: hard
 
-"@aneuhold/core-ts-api-lib@npm:^2.0.9":
-  version: 2.0.13
-  resolution: "@aneuhold/core-ts-api-lib@npm:2.0.13"
+"@aneuhold/core-ts-api-lib@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@aneuhold/core-ts-api-lib@npm:2.1.5"
   dependencies:
-    "@aneuhold/core-ts-db-lib": "npm:^2.0.4"
-    "@aneuhold/core-ts-lib": "npm:^2.0.6"
+    "@aneuhold/core-ts-db-lib": "npm:^2.0.66"
+    "@aneuhold/core-ts-lib": "npm:^2.1.1"
     bson: "npm:^6.2.0"
-  checksum: 10c0/df43d4cd8d6fbfc75221eb7144a4dae0b2d10826b0c66e036438b214d93dfd5b477fa95bc8ef2511d32d04019625a85425059f89a85fad00e5ec385c7a9ed42f
+  checksum: 10c0/812096471c21e7364e8384a49230d279f91bb5429f31a47cfd75390bd378e67adea16618ad385f4eff4a59bc755c6c1ff2e95776fadd00a498dd63aee15d3f51
   languageName: node
   linkType: hard
 
-"@aneuhold/core-ts-db-lib@npm:^2.0.26":
-  version: 2.0.26
-  resolution: "@aneuhold/core-ts-db-lib@npm:2.0.26"
+"@aneuhold/core-ts-db-lib@npm:^2.0.66":
+  version: 2.0.66
+  resolution: "@aneuhold/core-ts-db-lib@npm:2.0.66"
   dependencies:
-    "@aneuhold/core-ts-lib": "npm:^2.0.6"
+    "@aneuhold/core-ts-lib": "npm:^2.1.1"
     bson: "npm:^6.2.0"
-  checksum: 10c0/4c7b503bf97d8e008a5e6cd79ecd72ed9d2276e054dbbd4b0f97defc6a28f94c7efea5efd4d7469cdfc96be5804a799f0225220839a7daf8dab9841b7d1d8c5e
-  languageName: node
-  linkType: hard
-
-"@aneuhold/core-ts-db-lib@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@aneuhold/core-ts-db-lib@npm:2.0.4"
-  dependencies:
-    "@aneuhold/core-ts-lib": "npm:^2.0.6"
-    bson: "npm:^6.2.0"
-  checksum: 10c0/e4dd488ef1fea79765183d832992cad749e15adc64a23b036496119c6fac3dfce8ab63b1f4284749b15d0f16816b1b90b4cd1b61b07e184f74e611668c9900f6
+  checksum: 10c0/1d3dcf52768103640a9f8007d9fa6edb07c26d4d8d977d9f02e6f003bfdbad1dfbef377ac29337aa03ffa3bf236500586c9df5ae8a2273a087a0d28c17263b22
   languageName: node
   linkType: hard
 
@@ -87,16 +77,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aneuhold/core-ts-lib@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "@aneuhold/core-ts-lib@npm:2.0.6"
-  checksum: 10c0/d5e8105d9c368f00418f7b83a710b2777c460384ba519a260ed29d542082448230b6a0e279423089b3287088b56d026ddb5edcf2230ba1bd2e43962f0eadb676
+"@aneuhold/core-ts-lib@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@aneuhold/core-ts-lib@npm:2.1.1"
+  checksum: 10c0/172fb0582d506e6934aef734aa90db52b1508b070a41890c625000ba5f020710c9721bb0bb6bb10a2b9249137decd038bd9d18b385fa95d26e7d1237026ea61e
   languageName: node
   linkType: hard
 
-"@aneuhold/eslint-config@npm:^1.0.88":
-  version: 1.0.88
-  resolution: "@aneuhold/eslint-config@npm:1.0.88"
+"@aneuhold/eslint-config@npm:^1.0.89":
+  version: 1.0.89
+  resolution: "@aneuhold/eslint-config@npm:1.0.89"
   dependencies:
     "@eslint/js": "npm:^9.25.1"
     "@stylistic/eslint-plugin-js": "npm:^3.0.0"
@@ -115,7 +105,7 @@ __metadata:
     typescript-eslint: "npm:^8.31.0"
   peerDependencies:
     eslint: ">= 9.25.1"
-  checksum: 10c0/7bbd54dfa7aec73ea715d81390b26c6a2d9df797682da18e0fdbf20082b91ef404a22df4ecfd7ce6ddf4ab019636ab4ed405fef4492b0e476de46c587a7ae039
+  checksum: 10c0/4d030c359aa095911a275431fd96ff0f4ee2c2a538a270b9868ba77cc1f4454d5d9dab44a7ef05d0ce02227fcc2ad9df0037477b19c1ef7221dcc0b68e9c7e24
   languageName: node
   linkType: hard
 
@@ -1032,12 +1022,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mongodb-js/saslprep@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "@mongodb-js/saslprep@npm:1.1.1"
+"@mongodb-js/saslprep@npm:^1.1.9":
+  version: 1.2.2
+  resolution: "@mongodb-js/saslprep@npm:1.2.2"
   dependencies:
     sparse-bitfield: "npm:^3.0.3"
-  checksum: 10c0/b59fb1ed62b1a31ad26bbca8a5d81a4f4c0b880c95616a3650f6eb57f27b6ae83e5597fd6a63ddf899d4ace6979a79eb0024f50d33d871ef7f93f73f1106e816
+  checksum: 10c0/6ea882034fe99c6abe033d843dfa0f90fcec105ef538c04ee32aca9d2cda7cc8f2dd45c94c2dbf30f14668524ed076f7072bce857f9ee321ad5b0bc1f930c423
   languageName: node
   linkType: hard
 
@@ -2285,6 +2275,13 @@ __metadata:
   dependencies:
     fill-range: "npm:^7.0.1"
   checksum: 10c0/321b4d675791479293264019156ca322163f02dc06e3c4cab33bb15cd43d80b51efef69b0930cfde3acd63d126ebca24cd0544fa6f261e093a0fb41ab9dda381
+  languageName: node
+  linkType: hard
+
+"bson@npm:^6.10.3":
+  version: 6.10.3
+  resolution: "bson@npm:6.10.3"
+  checksum: 10c0/15ad7a9b3bf8090add5fea1761b1ba7d75e5256efcfbb8c9ca448ca98e59c3b079c37c36c7aca0cc916236bd2d4684a5525c68f3d76da8a13d55dc230abbdd21
   languageName: node
   linkType: hard
 
@@ -4829,16 +4826,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "mongodb@npm:6.3.0"
+"mongodb@npm:^6.8.0":
+  version: 6.16.0
+  resolution: "mongodb@npm:6.16.0"
   dependencies:
-    "@mongodb-js/saslprep": "npm:^1.1.0"
-    bson: "npm:^6.2.0"
+    "@mongodb-js/saslprep": "npm:^1.1.9"
+    bson: "npm:^6.10.3"
     mongodb-connection-string-url: "npm:^3.0.0"
   peerDependencies:
     "@aws-sdk/credential-providers": ^3.188.0
-    "@mongodb-js/zstd": ^1.1.0
+    "@mongodb-js/zstd": ^1.1.0 || ^2.0.0
     gcp-metadata: ^5.2.0
     kerberos: ^2.0.1
     mongodb-client-encryption: ">=6.0.0 <7"
@@ -4859,7 +4856,7 @@ __metadata:
       optional: true
     socks:
       optional: true
-  checksum: 10c0/e846c941b739c503b34c02500db56f966fdb8930420db24214d4305ac987415464ebc9eefaf5da1ffb7521844fc733177433b4cc7ba43c423f55eed4f2670cfe
+  checksum: 10c0/daf54347181d50ff6207a78f545bd1bea856505efa61a1bb29fc200b412fad84971c49e7d8a57e96a09bb6eab9625a6d6ad1d84884afa3a16041d5dba1b18b38
   languageName: node
   linkType: hard
 

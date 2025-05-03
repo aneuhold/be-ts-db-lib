@@ -1,6 +1,6 @@
 /* eslint-disable */
 // @ts-nocheck
-import { Logger } from '@aneuhold/core-ts-lib';
+import { DR } from '@aneuhold/core-ts-lib';
 import UserRepository from '../repositories/common/UserRepository.js';
 
 /**
@@ -26,7 +26,7 @@ export default class MigrationService {
     const updatedUsers = [];
     allUsers.forEach((user) => {
       if (user.password) {
-        Logger.error(
+        DR.logger.error(
           `User with ID: ${user._id} has a password in the wrong spot.`
         );
         user.auth.password = user.password;
@@ -36,17 +36,29 @@ export default class MigrationService {
     });
     if (dryRun) {
       if (updatedUsers.length > 0) {
-        Logger.info(`Would update ${updatedUsers.length} users.`);
+        DR.logger.info(`Would update ${updatedUsers.length} users.`);
       } else {
-        Logger.success('No changes to make.');
+        DR.logger.success('No changes to make.');
       }
       return;
     }
     if (updatedUsers.length > 0) {
-      Logger.info(`Updating ${updatedUsers.length} users.`);
+      DR.logger.info(`Updating ${updatedUsers.length} users.`);
       await userRepo.updateMany(updatedUsers);
     } else {
-      Logger.success('No changes to make.');
+      DR.logger.success('No changes to make.');
     }
+  }
+
+  static async migrate(): Promise<void> {
+    DR.logger.info('Starting migration...');
+    // Add migration logic here
+    DR.logger.success('Migration complete.');
+  }
+
+  static async migrateDryRun(): Promise<void> {
+    DR.logger.info('Starting migration dry run...');
+    // Add migration dry run logic here
+    DR.logger.success('Migration dry run complete.');
   }
 }
