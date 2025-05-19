@@ -2,7 +2,7 @@
   "name": "@aneuhold/be-ts-db-lib",
   "author": "Anton G. Neuhold Jr.",
   "license": "MIT",
-  "version": "2.0.66",
+  "version": "2.0.67",
   "description": "A backend database library meant to actually interact with various databases in personal projects",
   "packageManager": "yarn@4.6.0",
   "type": "module",
@@ -54,8 +54,8 @@
     "mongodb": "^6.8.0"
   },
   "devDependencies": {
-    "@aneuhold/eslint-config": "^1.0.93",
-    "@aneuhold/main-scripts": "^2.1.0",
+    "@aneuhold/eslint-config": "^1.0.97",
+    "@aneuhold/main-scripts": "^2.1.2",
     "@types/node": "^22.15.18",
     "@types/node-fetch": "^2.6.12",
     "eslint": "^9.27.0",
